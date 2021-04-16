@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Git') {
             steps {
-                git credentialsId: 'abc14a2a-3c68-43e0-a31c-7776604d8aad', url: 'https://github.com/vikash463/standard-jar.git'
+                git branch: '', credentialsId: 'abc14a2a-3c68-43e0-a31c-7776604d8aad', url: 'https://github.com/vikash463/Multi-branch.git'
             }
         }
         stage('Build') {
