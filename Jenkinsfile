@@ -15,7 +15,7 @@ pipeline {
         stages {
             stage('Git Clone') {
                 steps {
-                    git branch: '', credentialsId: 'abc14a2a-3c68-43e0-a31c-7776604d8aad', url: 'https://github.com/vikash463/Multi-branch.git'
+                    git branch: 'Dev', credentialsId: 'abc14a2a-3c68-43e0-a31c-7776604d8aad', url: 'https://github.com/vikash463/Multi-branch.git'
                     }
                 }
                 stage('Build') {
